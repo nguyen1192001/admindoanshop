@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #fff;
+    color: #243a6f;
+    position: relative;
+    z-index: 1;
+}
+
+h1,h2,h3,h4{
+    font-weight: 500;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d1e2e9;
+    overflow: hidden;
+}
+.nav{
+    padding: 1.6rem 0;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.logo{
+    color: #243a6f;
+}
+.logo h1{
+    font-size: 2.5rem;
+    padding-left: 3rem;
+}
+
+/* order-container */
+.order_container{
+    display: flex;
+    margin: 5rem;
+    border: 0.1rem solid rgb(52, 71, 117);
+}
+.customer{
+    width: 40%;
+    margin-right: 2rem;
+    padding : 1.2rem;
+}
+.customer h4{
+    font-weight: 700;
+}
+.customer span{
+    margin-right: 1rem;
+}
+
+.order{
+    width: 60%;
+    padding : 1.2rem;
+    border-left: 0.1rem solid #000;
+}
+.oder_product_cart{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.oder_product-img{
+    width: 5rem;
+    height: 4rem;
+    margin-right: 3rem;
+}
+.oder_product-img img{
+    width: 100%;
+}
+
+/*totals  */
+.carttotals{
+    margin: 3rem 3rem 3rem 20rem ;
+    background-color: #a1d1df;
+   
+}
+.quantiti,.totals{
+    display: flex;
+    height: 4rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
