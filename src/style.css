@@ -57,10 +57,14 @@ li{
 }
 .logo{
     color: #243a6f;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .logo h1{
     font-size: 2.5rem;
     padding-left: 3rem;
+    cursor: pointer;
 }
 
 /* order-container */
@@ -113,4 +117,100 @@ li{
     padding: 2rem;
     align-items: center;
     justify-content: space-between;
+}
+.btn{
+    display: inline-block;
+    background-color: #fc7c7c;
+    color: #fff;
+    padding: 1rem 4rem;
+    width: 20rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 1rem 1rem 2rem;
+    cursor: pointer;
+}
+.btn:hover{
+    border-color: rgb(206, 192, 255);
+}
+
+ /* authentication */
+.cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(153, 153, 153,0.4);
+    z-index: 1;
+}
+.login{
+    position: fixed;
+    top: 10%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    width: 50rem;
+    height: 50rem;
+    z-index: 1;
+    background-image: linear-gradient(to top left, rgb(0, 128, 107), rgb(206, 192, 255)); 
+    transition: all 300ms ease-in-out;
+   
+}
+.icon-login{
+    height: 16rem;
+    padding-top: 2.5rem;
+}
+.icon-circle{
+    margin: 0 auto;
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.icon-circle i{
+    font-size: 5rem;
+    position: absolute;
+    transform: translate(50%, 50%);
+}
+.login h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.form-login{
+    height: 16rem;
+    /* background-color: red; */
+    padding-top: 2rem;
+    padding-left: 5rem;
+}
+.form-login-item{
+    height: 6rem;
+}
+.form-login-item i{
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+.form-login-item input{
+    font-size: 2rem;
+    height: 5rem;
+    width: 30rem;
+    border: none;
+    opacity: 0.2;
+    padding-left:5px;
+    border-bottom: 2px solid #243a6f;
+}
+.btn-login{
+    text-align: center;
+    
+}
+.btn-login input{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(52, 71, 117);
+    color: #fff;
 }
