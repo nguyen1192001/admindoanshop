@@ -159,14 +159,20 @@ console.log("user",user)
         <div className="order">
           {
             item[0].map(e => {
+              console.log("item[0]",item[0])
               return (
-                <div className="oder_product_cart">
-                  <div className="oder_product-img">
-                    <img src={e.hinhanh} alt="" />
+                <div className='oder'>
+                  <div className="oder_product_cart">
+                    <div className="oder_product-img">
+                      <img src={e.hinhanh} alt="" />
+                    </div>
+                    <h5>{e.tensp}</h5>
+                    <div className="oder_total-price">${e.gia}</div>
                   </div>
-                  <h5>{e.tensp}</h5>
-                  <div className="oder_total-price">${e.gia}</div>
+                  <h5>--- số điện thoại lấy hàng: {e.nhacc.sdt}</h5>
+                  <h5>--- địa chỉ lấy hàng: {e.nhacc.diachincc.quan} - {e.nhacc.diachincc.dcctiet}</h5>
                 </div>
+               
               )
             })
           }
